@@ -1,19 +1,14 @@
 import os
-import requests
+from urllib.parse import quote
 
-# Configura i dati della tua repository GitHub
+# Il percorso locale della cartella bassi
+local_base_path = r"F:\Progetti Git\CRrT\bassi"
+# Il percorso di output esatto richiesto per l'index.html
+output_path = r"C:\Users\samue\Downloads\bass__\index.html"
+
 owner = "samu-saba"
 repo = "CRrT"
 branch = "main"
-folder = "bassi"
-
-api_url = f"https://api.github.com/repos/{owner}/{repo}/contents/{folder}?ref={branch}"
-
-def get_github_contents(url):
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    return []
 
 html_content = """<!DOCTYPE html>
 <html lang="it">
@@ -29,14 +24,16 @@ html_content = """<!DOCTYPE html>
         p.subtitle { margin: 0; color: #555555; font-size: 0.95rem; }
         .search-container { margin-bottom: 25px; }
         #search-input { width: 100%; padding: 12px 15px; font-size: 1rem; border: 2px solid #cccccc; border-radius: 6px; outline: none; box-sizing: border-box; }
+        #search-input:focus { border-color: #1a365d; }
         .section { margin-bottom: 20px; border: 1px solid #cccccc; border-radius: 6px; overflow: hidden; background-color: #fafafa; }
         details { width: 100%; }
         summary { background-color: #1a365d; color: #ffffff; font-size: 1.2rem; font-weight: bold; padding: 15px 20px; cursor: pointer; user-select: none; list-style: none; }
         summary::-webkit-details-marker { display: none; }
-        summary::after { content: ' ▼'; font-size: 0.9rem; float: right; }
+        summary::after { content: ' ▼'; font-size: 0.9rem; float: right; transition: transform 0.2s; }
         details[open] summary::after { transform: rotate(180deg); }
         .section-content { padding: 20px; background-color: #ffffff; border-top: 1px solid #cccccc; }
         .track { margin-bottom: 15px; display: flex; flex-direction: column; }
+        .track:last-child { margin-bottom: 0; }
         .track-title { font-weight: bold; margin-bottom: 5px; color: #333333; font-size: 0.95rem; }
         audio { width: 100%; height: 40px; }
     </style>
@@ -44,51 +41,42 @@ html_content = """<!DOCTYPE html>
 <body>
     <header>
         <h1>Archivio Studio Permanente – Sezione Bassi</h1>
-        <p class="subtitle">Libreria completa di tutti i brani – Riproduzione sequenziale continua</p>
+        <p class="subtitle">Libreria completa – Riproduzione sequenziale continua ininterrotta</p>
     </header>
     <div class="search-container">
-        <input type="text" id="search-input" placeholder="🔍 Cerca un brano...">
+        <input type="text" id="search-input" placeholder="🔍 Cerca un brano o una cartella...">
     </div>
     <div id="playlist-container">
 """
 
-items = get_github_contents(api_url)
+if not os.path.exists(local_base_path):
+    print(f"Errore: Il percorso sorgente '{local_base_path}' non esiste o non è accessibile.")
+else:
+    # Crea la cartella di destinazione se non esiste
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-# Esplora la cartella principale di bassi
-for item in items:
-    if item['type'] == 'dir':
-        dir_name = item['name']
-        sub_items = get_github_contents(item['url'])
-        
-        tracks_html = ""
-        for sub in sub_items:
-            # Se trova file audio direttamente o dentro sottocartelle
-            if sub['type'] == 'file' and sub['name'].lower().endswith(('.mp3', '.m4a', '.wav')):
-                file_url = sub['download_url']
-                file_name = sub['name']
+    for root, dirs, files in os.walk(local_base_path):
+        dirs.sort()
+        files.sort()
+        audio_files = [f for f in files if f.lower().endswith(('.mp3', '.m4a', '.wav'))]
+        if audio_files:
+            folder_name = os.path.basename(root)
+            tracks_html = ""
+            for file_name in audio_files:
+                rel_path = os.path.relpath(os.path.join(root, file_name), local_base_path).replace("\\", "/")
+                encoded_rel_path = "/".join([quote(p) for p in rel_path.split("/")])
+                file_url = f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/bassi/{encoded_rel_path}"
+                
                 tracks_html += f"""
                     <div class="track" data-title="{file_name.lower()}">
                         <span class="track-title">{file_name}</span>
                         <audio controls controlsList="nodownload" class="global-audio" src="{file_url}"></audio>
                     </div>"""
-            elif sub['type'] == 'dir':
-                # Gestisce il secondo livello di sottocartelle (es. nomecartella/nomecartella)
-                nested_items = get_github_contents(sub['url'])
-                for nest in nested_items:
-                    if nest['type'] == 'file' and nest['name'].lower().endswith(('.mp3', '.m4a', '.wav')):
-                        file_url = nest['download_url']
-                        file_name = nest['name']
-                        tracks_html += f"""
-                            <div class="track" data-title="{file_name.lower()}">
-                                <span class="track-title">{file_name}</span>
-                                <audio controls controlsList="nodownload" class="global-audio" src="{file_url}"></audio>
-                            </div>"""
-
-        if tracks_html:
+                    
             html_content += f"""
-        <div class="section" data-section-name="{dir_name}">
+        <div class="section" data-section-name="{folder_name}">
             <details>
-                <summary>📁 {dir_name}</summary>
+                <summary>📁 {folder_name}</summary>
                 <div class="section-content">{tracks_html}
                 </div>
             </details>
@@ -146,7 +134,7 @@ html_content += """
 </html>
 """
 
-with open("index.html", "w", encoding="utf-8") as f:
+with open(output_path, "w", encoding="utf-8") as f:
     f.write(html_content)
 
-print("File index.html generato con successo!")
+print(f"File index.html generato con successo esattamente in: {output_path}")
