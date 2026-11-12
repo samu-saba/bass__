@@ -3,852 +3,1411 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Blocco indicizzazione motori di ricerca (effetto "Non in elenco") -->
     <meta name="robots" content="noindex, nofollow">
-
     <title>Archivio Studio Permanente - Sezione Bassi</title>
-
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #ffffff;
-            color: #222222;
-        }
-
-        header {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #1a365d;
-        }
-
-        h1 {
-            margin: 0 0 5px 0;
-            color: #1a365d;
-            font-size: 1.8rem;
-        }
-
-        p.subtitle {
-            margin: 0;
-            color: #555555;
-            font-size: 0.95rem;
-        }
-
-        .search-container {
-            margin-bottom: 25px;
-        }
-
-        #search-input {
-            width: 100%;
-            padding: 12px 15px;
-            font-size: 1rem;
-            border: 2px solid #cccccc;
-            border-radius: 6px;
-            outline: none;
-            box-sizing: border-box;
-            transition: border-color 0.2s;
-        }
-
-        #search-input:focus {
-            border-color: #1a365d;
-        }
-
-        .section {
-            margin-bottom: 20px;
-            border: 1px solid #cccccc;
-            border-radius: 6px;
-            overflow: hidden;
-            background-color: #fafafa;
-        }
-
-        details {
-            width: 100%;
-        }
-
-        summary {
-            background-color: #1a365d;
-            color: #ffffff;
-            font-size: 1.2rem;
-            font-weight: bold;
-            padding: 15px 20px;
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-            list-style: none;
-        }
-
-        summary::-webkit-details-marker {
-            display: none;
-        }
-
-        summary::after {
-            content: ' ▼';
-            font-size: 0.9rem;
-            float: right;
-            transition: transform 0.2s;
-        }
-
-        details[open] summary::after {
-            transform: rotate(180deg);
-        }
-
-        .section-content {
-            padding: 20px;
-            background-color: #ffffff;
-            border-top: 1px solid #cccccc;
-        }
-
-        .track {
-            margin-bottom: 15px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .track:last-child {
-            margin-bottom: 0;
-        }
-
-        .track-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #333333;
-            font-size: 0.95rem;
-        }
-
-        audio {
-            width: 100%;
-            height: 40px;
-        }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #ffffff; color: #222222; }
+        header { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 2px solid #1a365d; }
+        h1 { margin: 0 0 5px 0; color: #1a365d; font-size: 1.8rem; }
+        p.subtitle { margin: 0; color: #555555; font-size: 0.95rem; }
+        .search-container { margin-bottom: 25px; }
+        #search-input { width: 100%; padding: 12px 15px; font-size: 1rem; border: 2px solid #cccccc; border-radius: 6px; outline: none; box-sizing: border-box; }
+        .section { margin-bottom: 20px; border: 1px solid #cccccc; border-radius: 6px; overflow: hidden; background-color: #fafafa; }
+        details { width: 100%; }
+        summary { background-color: #1a365d; color: #ffffff; font-size: 1.2rem; font-weight: bold; padding: 15px 20px; cursor: pointer; user-select: none; list-style: none; }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: ' ▼'; font-size: 0.9rem; float: right; }
+        details[open] summary::after { transform: rotate(180deg); }
+        .section-content { padding: 20px; background-color: #ffffff; border-top: 1px solid #cccccc; }
+        .track { margin-bottom: 15px; display: flex; flex-direction: column; }
+        .track-title { font-weight: bold; margin-bottom: 5px; color: #333333; font-size: 0.95rem; }
+        audio { width: 100%; height: 40px; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Archivio Studio Permanente – Sezione Bassi</h1>
-        <p class="subtitle">Libreria completa di tutte le cartelle – Riproduzione sequenziale continua ininterrotta</p>
+        <p class="subtitle">Libreria completa di tutti i brani – Riproduzione sequenziale continua</p>
     </header>
-
-    <!-- Barra di ricerca -->
     <div class="search-container">
-        <input type="text" id="search-input" placeholder="🔍 Cerca un brano o una cartella per titolo...">
+        <input type="text" id="search-input" placeholder="🔍 Cerca un brano...">
     </div>
-
     <div id="playlist-container">
 
-        <!-- 01-Teruah-Bassi -->
         <div class="section" data-section-name="01-Teruah-Bassi">
             <details>
                 <summary>📁 01-Teruah-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="teruah bassi">
-                        <span class="track-title">Teruah - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/01-Teruah-Bassi/01-Teruah-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="20 dio regna.mp3">
+                                <span class="track-title">20 DIO REGNA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/01-Teruah-Bassi/01-Teruah-Bassi/20%20DIO%20REGNA.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 07-Benedici il Signore-Bassi -->
         <div class="section" data-section-name="07-Benedici il Signore-Bassi">
             <details>
                 <summary>📁 07-Benedici il Signore-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="benedici il signore bassi">
-                        <span class="track-title">Benedici il Signore - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/07-Benedici%20il%20Signore-Bassi/07-Benedici%20il%20Signore-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="11 giovani e vecchi.mp3">
+                                <span class="track-title">11 GIOVANI E VECCHI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/07-Benedici%20il%20Signore-Bassi/07-Benedici%20il%20Signore-Bassi/11%20GIOVANI%20E%20VECCHI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="17 volgete gli occhi.mp3">
+                                <span class="track-title">17 VOLGETE GLI OCCHI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/07-Benedici%20il%20Signore-Bassi/07-Benedici%20il%20Signore-Bassi/17%20VOLGETE%20GLI%20OCCHI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="21 canta alleluia.mp3">
+                                <span class="track-title">21 CANTA ALLELUIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/07-Benedici%20il%20Signore-Bassi/07-Benedici%20il%20Signore-Bassi/21%20CANTA%20ALLELUIA.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 10-Su ali d'aquila-Bassi -->
         <div class="section" data-section-name="10-Su ali d'aquila-Bassi">
             <details>
                 <summary>📁 10-Su ali d'aquila-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="16 alzati e risplendi">
-                        <span class="track-title">16 ALZATI E RISPLENDI.MP3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/10-Su%20ali%20d'aquila-Bassi/10-Su%20ali%20d'aquila-Bassi/16%20ALZATI%20E%20RISPLENDI.MP3"></audio>
-                    </div>
+                            <div class="track" data-title="16 alzati e risplendi.mp3">
+                                <span class="track-title">16 ALZATI E RISPLENDI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/10-Su%20ali%20d'aquila-Bassi/10-Su%20ali%20d'aquila-Bassi/16%20ALZATI%20E%20RISPLENDI.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 12-Canta, canta, canta-Bassi -->
-        <div class="section" data-section-name="12-Canta, canta, canta-Bassi">
+        <div class="section" data-section-name="12-Canta,canta,canta-Bassi">
             <details>
-                <summary>📁 12-Canta, canta, canta-Bassi</summary>
+                <summary>📁 12-Canta,canta,canta-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="canta canta canta bassi">
-                        <span class="track-title">Canta, canta, canta - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/12-Canta,%20canta,%20canta-Bassi/12-Canta,%20canta,%20canta-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="14 tornera' il signor.mp3">
+                                <span class="track-title">14 TORNERA' IL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/12-Canta%2Ccanta%2Ccanta-Bassi/12-Canta%2Ccanta%2Ccanta-Bassi/14%20TORNERA'%20IL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="18 sii esaltato.mp3">
+                                <span class="track-title">18 SII ESALTATO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/12-Canta%2Ccanta%2Ccanta-Bassi/12-Canta%2Ccanta%2Ccanta-Bassi/18%20SII%20ESALTATO.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 13-Anamnesis-Bassi -->
         <div class="section" data-section-name="13-Anamnesis-Bassi">
             <details>
                 <summary>📁 13-Anamnesis-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="anamnesis bassi">
-                        <span class="track-title">Anamnesis - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/13-Anamnesis-Bassi/13-Anamnesis-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="15 corpo di gesu'.mp3">
+                                <span class="track-title">15 CORPO DI GESU'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/13-Anamnesis-Bassi/13-Anamnesis-Bassi/15%20CORPO%20DI%20GESU'.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 14-Regnerà-Bassi -->
         <div class="section" data-section-name="14-Regnerà-Bassi">
             <details>
                 <summary>📁 14-Regnerà-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="regnerà bassi">
-                        <span class="track-title">Regnerà - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/14-Regner%C3%A0-Bassi/14-Regner%C3%A0-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="19 se prendo le ali.mp3">
+                                <span class="track-title">19 SE PRENDO LE ALI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/14-Regnerà-Bassi/14-Regnerà-Bassi/19%20SE%20PRENDO%20LE%20ALI.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 16-Davanti al Re-Bassi -->
         <div class="section" data-section-name="16-Davanti al Re-Bassi">
             <details>
                 <summary>📁 16-Davanti al Re-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="3 com'è bello dar lode al signor">
-                        <span class="track-title">3 COM'E' BELLO DAR LODE AL SIGNOR.MP3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/3%20COM'E'%20BELLO%20DAR%20LODE%20AL%20SIGNOR.MP3"></audio>
-                    </div>
+                            <div class="track" data-title="1 maesta'.mp3">
+                                <span class="track-title">1 MAESTA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/1%20MAESTA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="10 prendi la mia vita.mp3">
+                                <span class="track-title">10 PRENDI LA MIA VITA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/10%20PRENDI%20LA%20MIA%20VITA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="12 ruha'.mp3">
+                                <span class="track-title">12 RUHA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/12%20RUHA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="2 davanti al re.mp3">
+                                <span class="track-title">2 DAVANTI AL RE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/2%20DAVANTI%20AL%20RE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="3 com'e' bello dar lode al signor.mp3">
+                                <span class="track-title">3 COM'E' BELLO DAR LODE AL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/3%20COM'E'%20BELLO%20DAR%20LODE%20AL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="4 lasciati andare.mp3">
+                                <span class="track-title">4 LASCIATI ANDARE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/4%20LASCIATI%20ANDARE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="5 vive jesus el senor.mp3">
+                                <span class="track-title">5 VIVE JESUS EL SENOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/5%20VIVE%20JESUS%20EL%20SENOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="6 custodiscimi.mp3">
+                                <span class="track-title">6 CUSTODISCIMI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/6%20CUSTODISCIMI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="7 padre ti preghiam.mp3">
+                                <span class="track-title">7 PADRE TI PREGHIAM.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/7%20PADRE%20TI%20PREGHIAM.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="9 padre t'amiamo.mp3">
+                                <span class="track-title">9 PADRE T'AMIAMO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/16-Davanti%20al%20Re-Bassi/16-Davanti%20al%20Re-Bassi/9%20PADRE%20T'AMIAMO.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 17-Nella tua santità-Bassi -->
         <div class="section" data-section-name="17-Nella tua santità-Bassi">
             <details>
                 <summary>📁 17-Nella tua santità-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="22 sia gloria a gesù">
-                        <span class="track-title">22 SIA GLORIA A GESU'.MP3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella%20tua%20santit%C3%A0-Bassi/17-Nella%20tua%20santit%C3%A0-Bassi/22%20SIA%20GLORIA%20A%20GESU'.MP3"></audio>
-                    </div>
+                            <div class="track" data-title="22 sia gloria a gesu'.mp3">
+                                <span class="track-title">22 SIA GLORIA A GESU'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/22%20SIA%20GLORIA%20A%20GESU'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="23 nella tua santita'.mp3">
+                                <span class="track-title">23 NELLA TUA SANTITA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/23%20NELLA%20TUA%20SANTITA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="24 salmo 84.mp3">
+                                <span class="track-title">24 SALMO 84.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/24%20SALMO%2084.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="25 partirete con gioia.mp3">
+                                <span class="track-title">25 PARTIRETE CON GIOIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/25%20PARTIRETE%20CON%20GIOIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="27 maranatha'.mp3">
+                                <span class="track-title">27 MARANATHA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/27%20MARANATHA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="28 mia forza e mio canto.mp3">
+                                <span class="track-title">28 MIA FORZA E MIO CANTO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/28%20MIA%20FORZA%20E%20MIO%20CANTO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="29 grande sei o mio signor.mp3">
+                                <span class="track-title">29 GRANDE SEI O MIO SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/29%20GRANDE%20SEI%20O%20MIO%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="30 gesu' t'adoriamo.mp3">
+                                <span class="track-title">30 GESU' T'ADORIAMO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/30%20GESU'%20T'ADORIAMO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="31 ti rendiamo grazie.mp3">
+                                <span class="track-title">31 TI RENDIAMO GRAZIE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/31%20TI%20RENDIAMO%20GRAZIE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="33 volto soave.mp3">
+                                <span class="track-title">33 VOLTO SOAVE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/33%20VOLTO%20SOAVE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="34 santo santo santo sei signor.mp3">
+                                <span class="track-title">34 SANTO SANTO SANTO SEI SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/17-Nella tua santità-Bassi/17-Nella tua santità-Bassi/34%20SANTO%20SANTO%20SANTO%20SEI%20SIGNOR.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 18-Come Davde-Bassi -->
         <div class="section" data-section-name="18-Come Davde-Bassi">
             <details>
                 <summary>📁 18-Come Davde-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="41 io celebrerò">
-                        <span class="track-title">41 IO CELEBRERO'.MP3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/41%20IO%20CELEBRERO'.MP3"></audio>
-                    </div>
+                            <div class="track" data-title="26 ti amo signor.mp3">
+                                <span class="track-title">26 TI AMO SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/26%20TI%20AMO%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="35 osanna all'altissimo.mp3">
+                                <span class="track-title">35 OSANNA ALL'ALTISSIMO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/35%20OSANNA%20ALL'ALTISSIMO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="36 rendete grazie.mp3">
+                                <span class="track-title">36 RENDETE GRAZIE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/36%20RENDETE%20GRAZIE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="38 tu sei il mio dio.mp3">
+                                <span class="track-title">38 TU SEI IL MIO DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/38%20TU%20SEI%20IL%20MIO%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="39 benedetto sei tu signore.mp3">
+                                <span class="track-title">39 BENEDETTO SEI TU SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/39%20BENEDETTO%20SEI%20TU%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="40 mio dio mi abbandono a te.mp3">
+                                <span class="track-title">40 MIO DIO MI ABBANDONO A TE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/40%20MIO%20DIO%20MI%20ABBANDONO%20A%20TE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="41 io celebrero'.mp3">
+                                <span class="track-title">41 IO CELEBRERO'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/41%20IO%20CELEBRERO'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="42 gloria al re dei re.mp3">
+                                <span class="track-title">42 GLORIA AL RE DEI RE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/42%20GLORIA%20AL%20RE%20DEI%20RE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="43 quando guardo alla tua santita'.mp3">
+                                <span class="track-title">43 QUANDO GUARDO ALLA TUA SANTITA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/43%20QUANDO%20GUARDO%20ALLA%20TUA%20SANTITA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="44 lode al signore.mp3">
+                                <span class="track-title">44 LODE AL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/44%20LODE%20AL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="45 spezziamo il pane.mp3">
+                                <span class="track-title">45 SPEZZIAMO IL PANE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/45%20SPEZZIAMO%20IL%20PANE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="46 gloria alleluia.mp3">
+                                <span class="track-title">46 GLORIA ALLELUIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/46%20GLORIA%20ALLELUIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="47 come davide.mp3">
+                                <span class="track-title">47 COME DAVIDE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/18-Come%20Davde-Bassi/18-Come%20Davde-Bassi/47%20COME%20DAVIDE.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 19-Osanna-Bassi -->
         <div class="section" data-section-name="19-Osanna-Bassi">
             <details>
                 <summary>📁 19-Osanna-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="56 sii esaltato signore">
-                        <span class="track-title">56 SII ESALTATO SIGNORE.MP3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/56%20SII%20ESALTATO%20SIGNORE.MP3"></audio>
-                    </div>
+                            <div class="track" data-title="48 questo e' il mio corpo.mp3">
+                                <span class="track-title">48 QUESTO E' IL MIO CORPO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/48%20QUESTO%20E'%20IL%20MIO%20CORPO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="49 sono il signore che ti guarisce.mp3">
+                                <span class="track-title">49 SONO IL SIGNORE CHE TI GUARISCE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/49%20SONO%20IL%20SIGNORE%20CHE%20TI%20GUARISCE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="50 grande e' il signor.mp3">
+                                <span class="track-title">50 GRANDE E' IL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/50%20GRANDE%20E'%20IL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="51 lode al nome di gesu'.mp3">
+                                <span class="track-title">51 LODE AL NOME DI GESU'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/51%20LODE%20AL%20NOME%20DI%20GESU'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="56 sii esaltato signore.mp3">
+                                <span class="track-title">56 SII ESALTATO SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/56%20SII%20ESALTATO%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="57 ti dono la mia vita.mp3">
+                                <span class="track-title">57 TI DONO LA MIA VITA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/57%20TI%20DONO%20LA%20MIA%20VITA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="58 il sacrificio della lode.mp3">
+                                <span class="track-title">58 IL SACRIFICIO DELLA LODE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/58%20IL%20SACRIFICIO%20DELLA%20LODE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="59 osanna.mp3">
+                                <span class="track-title">59 OSANNA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/59%20OSANNA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="60 col tuo amor.mp3">
+                                <span class="track-title">60 COL TUO AMOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/60%20COL%20TUO%20AMOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="61 accogli nella tua bonta'.mp3">
+                                <span class="track-title">61 ACCOGLI NELLA TUA BONTA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/61%20ACCOGLI%20NELLA%20TUA%20BONTA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="62 sorga dio.mp3">
+                                <span class="track-title">62 SORGA DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/19-Osanna-Bassi/19-Osanna-Bassi/62%20SORGA%20DIO.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 20-Prostrati adoriamo-Bassi -->
         <div class="section" data-section-name="20-Prostrati adoriamo-Bassi">
             <details>
                 <summary>📁 20-Prostrati adoriamo-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="prostrati adoriamo bassi">
-                        <span class="track-title">Prostrati adoriamo - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/20-Prostrati%20adoriamo-Bassi/20-Prostrati%20adoriamo-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="54 t'amero' signor.mp3">
+                                <span class="track-title">54 T'AMERO' SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/20-Prostrati%20adoriamo-Bassi/20-Prostrati%20adoriamo-Bassi/54%20T'AMERO'%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="69 alzano i fiumi signore.mp3">
+                                <span class="track-title">69 ALZANO I FIUMI SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/20-Prostrati%20adoriamo-Bassi/20-Prostrati%20adoriamo-Bassi/69%20ALZANO%20I%20FIUMI%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="70 prostrati adoriamo.mp3">
+                                <span class="track-title">70 PROSTRATI ADORIAMO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/20-Prostrati%20adoriamo-Bassi/20-Prostrati%20adoriamo-Bassi/70%20PROSTRATI%20ADORIAMO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="71 sei il mio rifugio.mp3">
+                                <span class="track-title">71 SEI IL MIO RIFUGIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/20-Prostrati%20adoriamo-Bassi/20-Prostrati%20adoriamo-Bassi/71%20SEI%20IL%20MIO%20RIFUGIO.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 21-Shalom-Bassi -->
         <div class="section" data-section-name="21-Shalom-Bassi">
             <details>
                 <summary>📁 21-Shalom-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="shalom bassi">
-                        <span class="track-title">Shalom - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="10 dio ti adorero'.mp3">
+                                <span class="track-title">10 DIO TI ADORERO'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/10%20DIO%20TI%20ADORERO'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="11 shalom.mp3">
+                                <span class="track-title">11 SHALOM.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/11%20SHALOM.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="12 fuoco che consuma.mp3">
+                                <span class="track-title">12 FUOCO CHE CONSUMA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/12%20FUOCO%20CHE%20CONSUMA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="13 un sol corpo, un solo spirito.mp3">
+                                <span class="track-title">13 UN SOL CORPO, UN SOLO SPIRITO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/13%20UN%20SOL%20CORPO%2C%20UN%20SOLO%20SPIRITO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="14 nella luce del signore marciamo.mp3">
+                                <span class="track-title">14 NELLA LUCE DEL SIGNORE MARCIAMO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/14%20NELLA%20LUCE%20DEL%20SIGNORE%20MARCIAMO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="15 spirito del dio vivente.mp3">
+                                <span class="track-title">15 SPIRITO DEL DIO VIVENTE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/15%20SPIRITO%20DEL%20DIO%20VIVENTE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="16 cantero' a javhe'.mp3">
+                                <span class="track-title">16 CANTERO' A JAVHE'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/16%20CANTERO'%20A%20JAVHE'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="17 ave maria.mp3">
+                                <span class="track-title">17 AVE MARIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/17%20AVE%20MARIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="18 benedictus.mp3">
+                                <span class="track-title">18 BENEDICTUS.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/18%20BENEDICTUS.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="9 e' bello lodarti.mp3">
+                                <span class="track-title">9 E' BELLO LODARTI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/21-Shalom-Bassi/21-Shalom-Bassi/9%20E'%20BELLO%20LODARTI.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 22-Gerico le tue mura crolleranno-Bassi -->
         <div class="section" data-section-name="22-Gerico le tue mura crolleranno-Bassi">
             <details>
                 <summary>📁 22-Gerico le tue mura crolleranno-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="gerico le tue mura crolleranno bassi">
-                        <span class="track-title">Gerico le tue mura crolleranno - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="21 tua signor e' la gloria.mp3">
+                                <span class="track-title">21 TUA SIGNOR E' LA GLORIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/21%20TUA%20SIGNOR%20E'%20LA%20GLORIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="22 alla dolce presenza tua.mp3">
+                                <span class="track-title">22 ALLA DOLCE PRESENZA TUA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22%20ALLA%20DOLCE%20PRESENZA%20TUA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="24 gerico le tue mura crolleranno.mp3">
+                                <span class="track-title">24 GERICO LE TUE MURA CROLLERANNO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/24%20GERICO%20LE%20TUE%20MURA%20CROLLERANNO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="25 per la tua gloria.mp3">
+                                <span class="track-title">25 PER LA TUA GLORIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/25%20PER%20LA%20TUA%20GLORIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="26 potenza che guarisce.mp3">
+                                <span class="track-title">26 POTENZA CHE GUARISCE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/26%20POTENZA%20CHE%20GUARISCE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="27 acclamate al signore.mp3">
+                                <span class="track-title">27 ACCLAMATE AL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/27%20ACCLAMATE%20AL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="28 osanna al re dei re.mp3">
+                                <span class="track-title">28 OSANNA AL RE DEI RE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/28%20OSANNA%20AL%20RE%20DEI%20RE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="29 voglio cantare al signore.mp3">
+                                <span class="track-title">29 VOGLIO CANTARE AL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/29%20VOGLIO%20CANTARE%20AL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="30 cantico di anna.mp3">
+                                <span class="track-title">30 CANTICO DI ANNA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/30%20CANTICO%20DI%20ANNA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="31 benediro' il signore.mp3">
+                                <span class="track-title">31 BENEDIRO' IL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/31%20BENEDIRO'%20IL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="32 pace e' in te signor.mp3">
+                                <span class="track-title">32 PACE E' IN TE SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/22-Gerico%20le%20tue%20mura%20crolleranno-Bassi/32%20PACE%20E'%20IN%20TE%20SIGNOR.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 23-Vittoria-Bassi -->
         <div class="section" data-section-name="23-Vittoria-Bassi">
             <details>
                 <summary>📁 23-Vittoria-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="vittoria bassi">
-                        <span class="track-title">Vittoria - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="19 degno sei signor.mp3">
+                                <span class="track-title">19 DEGNO SEI SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/19%20DEGNO%20SEI%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="33 inno di liberazione.mp3">
+                                <span class="track-title">33 INNO DI LIBERAZIONE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/33%20INNO%20DI%20LIBERAZIONE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="34 dio immortale.mp3">
+                                <span class="track-title">34 DIO IMMORTALE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/34%20DIO%20IMMORTALE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="35 cantate inni a dio.mp3">
+                                <span class="track-title">35 CANTATE INNI A DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/35%20CANTATE%20INNI%20A%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="37 gesu' sei qui con me.mp3">
+                                <span class="track-title">37 GESU' SEI QUI CON ME.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/37%20GESU'%20SEI%20QUI%20CON%20ME.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="38 abba padre.mp3">
+                                <span class="track-title">38 ABBA PADRE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/38%20ABBA%20PADRE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="39 vittoria.mp3">
+                                <span class="track-title">39 VITTORIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/39%20VITTORIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="40 ai piedi di gesu'.mp3">
+                                <span class="track-title">40 AI PIEDI DI GESU'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/40%20AI%20PIEDI%20DI%20GESU'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="41 saldo e' il mio cuore.mp3">
+                                <span class="track-title">41 SALDO E' IL MIO CUORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/41%20SALDO%20E'%20IL%20MIO%20CUORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="42 maranatha'.mp3">
+                                <span class="track-title">42 MARANATHA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/42%20MARANATHA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="43 ci liberera' il signor.mp3">
+                                <span class="track-title">43 CI LIBERERA' IL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/43%20CI%20LIBERERA'%20IL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="45 cantiamo gloria.mp3">
+                                <span class="track-title">45 CANTIAMO GLORIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/23-Vittoria-Bassi/23-Vittoria-Bassi/45%20CANTIAMO%20GLORIA.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 24-Celebrate-Bassi -->
         <div class="section" data-section-name="24-Celebrate-Bassi">
             <details>
                 <summary>📁 24-Celebrate-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="celebrate bassi">
-                        <span class="track-title">Celebrate - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="1 luce del mondo.mp3">
+                                <span class="track-title">1 LUCE DEL MONDO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/1%20LUCE%20DEL%20MONDO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="36 gesu'.mp3">
+                                <span class="track-title">36 GESU'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/36%20GESU'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="44 spirito di dio.mp3">
+                                <span class="track-title">44 SPIRITO DI DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/44%20SPIRITO%20DI%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="46 glorificate dio.mp3">
+                                <span class="track-title">46 GLORIFICATE DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/46%20GLORIFICATE%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="48 esultiamo nel signor.mp3">
+                                <span class="track-title">48 ESULTIAMO NEL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/48%20ESULTIAMO%20NEL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="49 nella pace, nella gioia.mp3">
+                                <span class="track-title">49 NELLA PACE, NELLA GIOIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/49%20NELLA%20PACE%2C%20NELLA%20GIOIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="50 ricevero' il tuo amore.mp3">
+                                <span class="track-title">50 RICEVERO' IL TUO AMORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/50%20RICEVERO'%20IL%20TUO%20AMORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="51 lodate il signore.mp3">
+                                <span class="track-title">51 LODATE IL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/51%20LODATE%20IL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="52 agnello immolato.mp3">
+                                <span class="track-title">52 AGNELLO IMMOLATO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/52%20AGNELLO%20IMMOLATO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="53 sei il signor.mp3">
+                                <span class="track-title">53 SEI IL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/53%20SEI%20IL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="54 celebrate.mp3">
+                                <span class="track-title">54 CELEBRATE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/24-Celebrate-Bassi/24-Celebrate-Bassi/54%20CELEBRATE.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 25-Risplendi Gerusalemme-Bassi -->
         <div class="section" data-section-name="25-Risplendi Gerusalemme-Bassi">
             <details>
                 <summary>📁 25-Risplendi Gerusalemme-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="risplendi gerusalemme bassi">
-                        <span class="track-title">Risplendi Gerusalemme - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="10 io vedo il re.mp3">
+                                <span class="track-title">10 IO VEDO IL RE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/10%20IO%20VEDO%20IL%20RE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="11 lode alla trinita'.mp3">
+                                <span class="track-title">11 LODE ALLA TRINITA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/11%20LODE%20ALLA%20TRINITA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="13 risplendi gerusalemme.mp3">
+                                <span class="track-title">13 RISPLENDI GERUSALEMME.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/13%20RISPLENDI%20GERUSALEMME.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="14 alla tua mensa.mp3">
+                                <span class="track-title">14 ALLA TUA MENSA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/14%20ALLA%20TUA%20MENSA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="15 lodate cieli dei cieli.mp3">
+                                <span class="track-title">15 LODATE CIELI DEI CIELI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/15%20LODATE%20CIELI%20DEI%20CIELI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="2 innalziamo il nome tuo santo.mp3">
+                                <span class="track-title">2 INNALZIAMO IL NOME TUO SANTO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/2%20INNALZIAMO%20IL%20NOME%20TUO%20SANTO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="3 eterno signor.mp3">
+                                <span class="track-title">3 ETERNO SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/3%20ETERNO%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="4 benedetto il nome del signor.mp3">
+                                <span class="track-title">4 BENEDETTO IL NOME DEL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/4%20BENEDETTO%20IL%20NOME%20DEL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="5 sia lode all'agnello.mp3">
+                                <span class="track-title">5 SIA LODE ALL'AGNELLO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/5%20SIA%20LODE%20ALL'AGNELLO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="6 dalla tristezza alla danza.mp3">
+                                <span class="track-title">6 DALLA TRISTEZZA ALLA DANZA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/6%20DALLA%20TRISTEZZA%20ALLA%20DANZA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="7 ti adoro o mio signor.mp3">
+                                <span class="track-title">7 TI ADORO O MIO SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/7%20TI%20ADORO%20O%20MIO%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="8 voglio stare accanto a te.mp3">
+                                <span class="track-title">8 VOGLIO STARE ACCANTO A TE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/8%20VOGLIO%20STARE%20ACCANTO%20A%20TE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="9 celebriamo il signore.mp3">
+                                <span class="track-title">9 CELEBRIAMO IL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/25-Risplendi%20Gerusalemme-Bassi/25-Risplendi%20Gerusalemme-Bassi/9%20CELEBRIAMO%20IL%20SIGNORE.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 26-Cantiamo con gioia-Bassi -->
         <div class="section" data-section-name="26-Cantiamo con gioia-Bassi">
             <details>
                 <summary>📁 26-Cantiamo con gioia-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="cantiamo con gioia bassi">
-                        <span class="track-title">Cantiamo con gioia - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="16 creati per te.mp3">
+                                <span class="track-title">16 CREATI PER TE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/16%20CREATI%20PER%20TE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="17 cantiamo con gioia.mp3">
+                                <span class="track-title">17 CANTIAMO CON GIOIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/17%20CANTIAMO%20CON%20GIOIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="18 noi ti invochiamo.mp3">
+                                <span class="track-title">18 NOI TI INVOCHIAMO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/18%20NOI%20TI%20INVOCHIAMO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="19 cantico dei tre giovani.mp3">
+                                <span class="track-title">19 CANTICO DEI TRE GIOVANI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/19%20CANTICO%20DEI%20TRE%20GIOVANI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="20 gesu' e' vivo.mp3">
+                                <span class="track-title">20 GESU' E' VIVO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/20%20GESU'%20E'%20VIVO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="21 o madre del signore.mp3">
+                                <span class="track-title">21 O MADRE DEL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/21%20O%20MADRE%20DEL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="22 e' grande il signore.mp3">
+                                <span class="track-title">22 E' GRANDE IL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/22%20E'%20GRANDE%20IL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="23 e' la gioia che fa cantare.mp3">
+                                <span class="track-title">23 E' LA GIOIA CHE FA CANTARE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/26-Cantiamo%20con%20gioia-Bassi/26-Cantiamo%20con%20gioia-Bassi/23%20E'%20LA%20GIOIA%20CHE%20FA%20CANTARE.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 27-Eterna è la sua misericordia-Bassi -->
         <div class="section" data-section-name="27-Eterna è la sua misericordia-Bassi">
             <details>
                 <summary>📁 27-Eterna è la sua misericordia-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="eterna è la sua misericordia bassi">
-                        <span class="track-title">Eterna è la sua misericordia - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna%20%C3%A8%20la%20sua%20misericordia-Bassi/27-Eterna%20%C3%A8%20la%20sua%20misericordia-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="1 re dei re.mp3">
+                                <span class="track-title">1 RE DEI RE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/1%20RE%20DEI%20RE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="2 alleluia al redentore 2.mp3">
+                                <span class="track-title">2 ALLELUIA AL REDENTORE 2.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/2%20ALLELUIA%20AL%20REDENTORE%202.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="2 alleluia al redentore.mp3">
+                                <span class="track-title">2 ALLELUIA AL REDENTORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/2%20ALLELUIA%20AL%20REDENTORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="24 salmo 50.mp3">
+                                <span class="track-title">24 SALMO 50.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/24%20SALMO%2050.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="25 e sia la pace.mp3">
+                                <span class="track-title">25 E SIA LA PACE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/25%20E%20SIA%20LA%20PACE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="3 il suo nome celebriamo.mp3">
+                                <span class="track-title">3 IL SUO NOME CELEBRIAMO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/3%20IL%20SUO%20NOME%20CELEBRIAMO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="4 eterna e' la sua misericordia.mp3">
+                                <span class="track-title">4 ETERNA E' LA SUA MISERICORDIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/4%20ETERNA%20E'%20LA%20SUA%20MISERICORDIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="5 l'amore del padre.mp3">
+                                <span class="track-title">5 L'AMORE DEL PADRE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/5%20L'AMORE%20DEL%20PADRE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="6 le beatitudini.mp3">
+                                <span class="track-title">6 LE BEATITUDINI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/6%20LE%20BEATITUDINI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="7 lui verra' e ti salvera'.mp3">
+                                <span class="track-title">7 LUI VERRA' E TI SALVERA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/7%20LUI%20VERRA'%20E%20TI%20SALVERA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="8 popoli tutti acclamate.mp3">
+                                <span class="track-title">8 POPOLI TUTTI ACCLAMATE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/8%20POPOLI%20TUTTI%20ACCLAMATE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="9 siamo un sol corpo.mp3">
+                                <span class="track-title">9 SIAMO UN SOL CORPO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/27-Eterna è la sua misericordia-Bassi/27-Eterna è la sua misericordia-Bassi/9%20SIAMO%20UN%20SOL%20CORPO.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 28-Nelle tue mani-Bassi -->
         <div class="section" data-section-name="28-Nelle tue mani-Bassi">
             <details>
                 <summary>📁 28-Nelle tue mani-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="17 vieni al signor">
-                        <span class="track-title">17 VIENI AL SIGNOR.MP3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/17%20VIENI%20AL%20SIGNOR.MP3"></audio>
-                    </div>
+                            <div class="track" data-title="10 salve regina.mp3">
+                                <span class="track-title">10 SALVE REGINA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/10%20SALVE%20REGINA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="11 alleluja padre mio.mp3">
+                                <span class="track-title">11 ALLELUJA PADRE MIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/11%20ALLELUJA%20PADRE%20MIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="12 iddio dimora nel suo tempio.mp3">
+                                <span class="track-title">12 IDDIO DIMORA NEL SUO TEMPIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/12%20IDDIO%20DIMORA%20NEL%20SUO%20TEMPIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="13 isaia 43.mp3">
+                                <span class="track-title">13 ISAIA 43.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/13%20ISAIA%2043.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="14 santo santo.mp3">
+                                <span class="track-title">14 SANTO SANTO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/14%20SANTO%20SANTO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="15 sempre cantero'.mp3">
+                                <span class="track-title">15 SEMPRE CANTERO'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/15%20SEMPRE%20CANTERO'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="16 communion.mp3">
+                                <span class="track-title">16 COMMUNION.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/16%20COMMUNION.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="17 vieni al signor.mp3">
+                                <span class="track-title">17 VIENI AL SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/17%20VIENI%20AL%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="18 esultate in dio.mp3">
+                                <span class="track-title">18 ESULTATE IN DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/18%20ESULTATE%20IN%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="19 gesu' e la samaritana.mp3">
+                                <span class="track-title">19 GESU' E LA SAMARITANA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/19%20GESU'%20E%20LA%20SAMARITANA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="20 nelle tue mani.mp3">
+                                <span class="track-title">20 NELLE TUE MANI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/20%20NELLE%20TUE%20MANI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="21 rallegratevi nel signore.mp3">
+                                <span class="track-title">21 RALLEGRATEVI NEL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/28-Nelle%20tue%20mani-Bassi/28-Nelle%20tue%20mani-Bassi/21%20RALLEGRATEVI%20NEL%20SIGNORE.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 29-Risorto per amore-Bassi -->
         <div class="section" data-section-name="29-Risorto per amore-Bassi">
             <details>
                 <summary>📁 29-Risorto per amore-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="risorto per amore bassi">
-                        <span class="track-title">Risorto per amore - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="1 il buon pastore.mp3">
+                                <span class="track-title">1 IL BUON PASTORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/1%20IL%20BUON%20PASTORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="10 il signore e' qui fra noi.mp3">
+                                <span class="track-title">10 IL SIGNORE E' QUI FRA NOI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/10%20IL%20SIGNORE%20E'%20QUI%20FRA%20NOI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="11 mia gioia sei.mp3">
+                                <span class="track-title">11 MIA GIOIA SEI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/11%20MIA%20GIOIA%20SEI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="12 spirito santo dai luce.mp3">
+                                <span class="track-title">12 SPIRITO SANTO DAI LUCE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/12%20SPIRITO%20SANTO%20DAI%20LUCE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="2 cristo e' risorto veramente.mp3">
+                                <span class="track-title">2 CRISTO E' RISORTO VERAMENTE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/2%20CRISTO%20E'%20RISORTO%20VERAMENTE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="3 da' gloria al tuo nome.mp3">
+                                <span class="track-title">3 DA' GLORIA AL TUO NOME.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/3%20DA'%20GLORIA%20AL%20TUO%20NOME.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="4 davanti a questo amore.mp3">
+                                <span class="track-title">4 DAVANTI A QUESTO AMORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/4%20DAVANTI%20A%20QUESTO%20AMORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="5 dio ha tanto amato il mondo.mp3">
+                                <span class="track-title">5 DIO HA TANTO AMATO IL MONDO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/5%20DIO%20HA%20TANTO%20AMATO%20IL%20MONDO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="6 dio mio re.mp3">
+                                <span class="track-title">6 DIO MIO RE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/6%20DIO%20MIO%20RE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="7 gesu' amico mio.mp3">
+                                <span class="track-title">7 GESU' AMICO MIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/7%20GESU'%20AMICO%20MIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="8 gesu' mio redentor.mp3">
+                                <span class="track-title">8 GESU' MIO REDENTOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/8%20GESU'%20MIO%20REDENTOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="9 gioisci figlia di sion.mp3">
+                                <span class="track-title">9 GIOISCI FIGLIA DI SION.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/29-Risorto%20per%20amore-Bassi/29-Risorto%20per%20amore-Bassi/9%20GIOISCI%20FIGLIA%20DI%20SION.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 30-Ad una voce-Bassi -->
         <div class="section" data-section-name="30-Ad una voce-Bassi">
             <details>
                 <summary>📁 30-Ad una voce-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="15 agnello di dio">
-                        <span class="track-title">15 AGNELLO DI DIO.MP3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/15%20AGNELLO%20DI%20DIO.MP3"></audio>
-                    </div>
+                            <div class="track" data-title="1 gloria a dio.mp3">
+                                <span class="track-title">1 GLORIA A DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/1%20GLORIA%20A%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="13 acclamate a dio.mp3">
+                                <span class="track-title">13 ACCLAMATE A DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/13%20ACCLAMATE%20A%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="14 ad una voce.mp3">
+                                <span class="track-title">14 AD UNA VOCE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/14%20AD%20UNA%20VOCE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="15 agnello di dio.mp3">
+                                <span class="track-title">15 AGNELLO DI DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/15%20AGNELLO%20DI%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="16 gesu' ti adoro.mp3">
+                                <span class="track-title">16 GESU' TI ADORO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/16%20GESU'%20TI%20ADORO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="17 gloria a dio.mp3">
+                                <span class="track-title">17 GLORIA A DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/17%20GLORIA%20A%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="18 gloria a te signor.mp3">
+                                <span class="track-title">18 GLORIA A TE SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/18%20GLORIA%20A%20TE%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="19 mio rifugio sei tu.mp3">
+                                <span class="track-title">19 MIO RIFUGIO SEI TU.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/19%20MIO%20RIFUGIO%20SEI%20TU.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="2 gloria a te signore.mp3">
+                                <span class="track-title">2 GLORIA A TE SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/2%20GLORIA%20A%20TE%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="20 mio sigmore e mio dio.mp3">
+                                <span class="track-title">20 MIO SIGMORE E MIO DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/20%20MIO%20SIGMORE%20E%20MIO%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="3 mio rifugio sei tu.mp3">
+                                <span class="track-title">3 MIO RIFUGIO SEI TU.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/3%20MIO%20RIFUGIO%20SEI%20TU.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="4 mio signore e mio dio.mp3">
+                                <span class="track-title">4 MIO SIGNORE E MIO DIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/4%20MIO%20SIGNORE%20E%20MIO%20DIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="6 signore pieta'.mp3">
+                                <span class="track-title">6 SIGNORE PIETA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/6%20SIGNORE%20PIETA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="7 solo nel signore.mp3">
+                                <span class="track-title">7 SOLO NEL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/7%20SOLO%20NEL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="8 sorgi gerusalemme 2.mp3">
+                                <span class="track-title">8 SORGI GERUSALEMME 2.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/8%20SORGI%20GERUSALEMME%202.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="8 sorgi gerusalemme 3.mp3">
+                                <span class="track-title">8 SORGI GERUSALEMME 3.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/8%20SORGI%20GERUSALEMME%203.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="8 sorgi gerusalemme.mp3">
+                                <span class="track-title">8 SORGI GERUSALEMME.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/8%20SORGI%20GERUSALEMME.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="9 questa e' la mia fede.mp3">
+                                <span class="track-title">9 QUESTA E' LA MIA FEDE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/30-Ad%20una%20voce-Bassi/30-Ad%20una%20voce-Bassi/9%20QUESTA%20E'%20LA%20MIA%20FEDE.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 31-Il tuo amore è grande-Bassi -->
         <div class="section" data-section-name="31-Il tuo amore è grande-Bassi">
             <details>
                 <summary>📁 31-Il tuo amore è grande-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="il tuo amore è grande bassi">
-                        <span class="track-title">Il tuo amore è grande - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il%20tuo%20amore%20%C3%A8%20grande-Bassi/31-Il%20tuo%20amore%20%C3%A8%20grande-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="11 cerco solo te.mp3">
+                                <span class="track-title">11 CERCO SOLO TE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/11%20CERCO%20SOLO%20TE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="12 chi ci separera'.mp3">
+                                <span class="track-title">12 CHI CI SEPARERA'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/12%20CHI%20CI%20SEPARERA'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="13 date gloria a lui.mp3">
+                                <span class="track-title">13 DATE GLORIA A LUI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/13%20DATE%20GLORIA%20A%20LUI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="14 il tuo amore e' grande.mp3">
+                                <span class="track-title">14 IL TUO AMORE E' GRANDE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/14%20IL%20TUO%20AMORE%20E'%20GRANDE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="15 noi loderemo il signore.mp3">
+                                <span class="track-title">15 NOI LODEREMO IL SIGNORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/15%20NOI%20LODEREMO%20IL%20SIGNORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="16 padre mio.mp3">
+                                <span class="track-title">16 PADRE MIO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/16%20PADRE%20MIO.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="17 pane di vita.mp3">
+                                <span class="track-title">17 PANE DI VITA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/17%20PANE%20DI%20VITA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="18 risorgero' con te.mp3">
+                                <span class="track-title">18 RISORGERO' CON TE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/18%20RISORGERO'%20CON%20TE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="19 so che tu sei mio signor.mp3">
+                                <span class="track-title">19 SO CHE TU SEI MIO SIGNOR.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/19%20SO%20CHE%20TU%20SEI%20MIO%20SIGNOR.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="5 t'invochiamo spirito.mp3">
+                                <span class="track-title">5 T'INVOCHIAMO SPIRITO.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/31-Il tuo amore è grande-Bassi/31-Il tuo amore è grande-Bassi/5%20T'INVOCHIAMO%20SPIRITO.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 32-lo scelgo te-Bassi -->
-        <div class="section" data-section-name="32-lo scelgo te-Bassi">
+        <div class="section" data-section-name="32-Io scelgo te-Bassi">
             <details>
-                <summary>📁 32-lo scelgo te-Bassi</summary>
+                <summary>📁 32-Io scelgo te-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="lo scelgo te bassi">
-                        <span class="track-title">Lo scelgo te - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-lo%20scelgo%20te-Bassi/32-lo%20scelgo%20te-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="1 abba' misericordia.mp3">
+                                <span class="track-title">1 ABBA' MISERICORDIA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/1%20ABBA'%20MISERICORDIA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="10 rimanete in me.mp3">
+                                <span class="track-title">10 RIMANETE IN ME.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/10%20RIMANETE%20IN%20ME.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="11 ti esaltero'.mp3">
+                                <span class="track-title">11 TI ESALTERO'.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/11%20TI%20ESALTERO'.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="2 applaudite popoli tutti.mp3">
+                                <span class="track-title">2 APPLAUDITE POPOLI TUTTI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/2%20APPLAUDITE%20POPOLI%20TUTTI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="3 benediro' il tuo nome.mp3">
+                                <span class="track-title">3 BENEDIRO' IL TUO NOME.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/3%20BENEDIRO'%20IL%20TUO%20NOME.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="4 cantero' alleluja.mp3">
+                                <span class="track-title">4 CANTERO' ALLELUJA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/4%20CANTERO'%20ALLELUJA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="5 celebriamo il dio d'amore.mp3">
+                                <span class="track-title">5 CELEBRIAMO IL DIO D'AMORE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/5%20CELEBRIAMO%20IL%20DIO%20D'AMORE.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="6 come tu mi vuoi.mp3">
+                                <span class="track-title">6 COME TU MI VUOI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/6%20COME%20TU%20MI%20VUOI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="7 fa' che io creda.mp3">
+                                <span class="track-title">7 FA' CHE IO CREDA.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/7%20FA'%20CHE%20IO%20CREDA.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="8 innalzero' le mie mani.mp3">
+                                <span class="track-title">8 INNALZERO' LE MIE MANI.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/8%20INNALZERO'%20LE%20MIE%20MANI.MP3"></audio>
+                            </div>
+                            <div class="track" data-title="9 io scelgo te.mp3">
+                                <span class="track-title">9 IO SCELGO TE.MP3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/32-Io%20scelgo%20te-Bassi/32-Io%20scelgo%20te-Bassi/9%20IO%20SCELGO%20TE.MP3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 33-Voglio vedere il tuo volto-Bassi -->
         <div class="section" data-section-name="33-Voglio vedere il tuo volto-Bassi">
             <details>
                 <summary>📁 33-Voglio vedere il tuo volto-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="voglio vedere il tuo volto bassi">
-                        <span class="track-title">Voglio vedere il tuo volto - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="01b-anima di cristo.mp3">
+                                <span class="track-title">01B-Anima di Cristo.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/01B-Anima%20di%20Cristo.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="01b-var_anima di cristo.mp3">
+                                <span class="track-title">01B-Var_Anima di Cristo.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/01B-Var_Anima%20di%20Cristo.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="02b-canterò al signore.mp3">
+                                <span class="track-title">02B-Canterò al Signore.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/02B-Canterò al Signore.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="03b-canterò in tuo onore.mp3">
+                                <span class="track-title">03B-Canterò in tuo onore.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/03B-Canterò in tuo onore.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="04b-cosa offrirti.mp3">
+                                <span class="track-title">04B-Cosa offrirti.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/04B-Cosa%20offrirti.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="05b-emmanuel.mp3">
+                                <span class="track-title">05B-Emmanuel.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/05B-Emmanuel.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="06b-gloria al signore che salva.mp3">
+                                <span class="track-title">06B-Gloria al Signore che salva.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/06B-Gloria%20al%20Signore%20che%20salva.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="07b-in te c'è salvezza.mp3">
+                                <span class="track-title">07B-In te c'è salvezza.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/07B-In te c'è salvezza.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="08b-maria.mp3">
+                                <span class="track-title">08B-Maria.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/08B-Maria.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="09b-quale gioia star con te.mp3">
+                                <span class="track-title">09B-Quale gioia star con te.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/09B-Quale%20gioia%20star%20con%20te.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="10b-tu sei misericordia.mp3">
+                                <span class="track-title">10B-Tu sei misericordia.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/10B-Tu%20sei%20misericordia.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="10b-var_tu sei misericordia.mp3">
+                                <span class="track-title">10B-Var_Tu sei misericordia.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/10B-Var_Tu%20sei%20misericordia.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="11b-voglio vedere il tuo volto.mp3">
+                                <span class="track-title">11B-Voglio vedere il Tuo volto.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/33-Voglio%20vedere%20il%20tuo%20volto-Bassi/11B-Voglio%20vedere%20il%20Tuo%20volto.mp3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 34-Sentieri di speranza-Bassi -->
         <div class="section" data-section-name="34-Sentieri di speranza-Bassi">
             <details>
                 <summary>📁 34-Sentieri di speranza-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="sentieri di speranza bassi">
-                        <span class="track-title">Sentieri di speranza - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="alza i tuoi occhi bas.mp3">
+                                <span class="track-title">Alza i tuoi occhi BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Alza%20i%20tuoi%20occhi%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="ascolto la tua voce bas.mp3">
+                                <span class="track-title">Ascolto la tua voce BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Ascolto%20la%20tua%20voce%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="celebrero bas.mp3">
+                                <span class="track-title">Celebrero BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Celebrero%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="con un cuore solo bas.mp3">
+                                <span class="track-title">Con un cuore solo BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Con%20un%20cuore%20solo%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="cristo speranza delle genti bas.mp3">
+                                <span class="track-title">Cristo speranza delle genti BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Cristo%20speranza%20delle%20genti%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="donna della speranza bas.mp3">
+                                <span class="track-title">Donna della speranza BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Donna%20della%20speranza%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="gesù ricordati di me bas.mp3">
+                                <span class="track-title">Gesù ricordati di me BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Gesù ricordati di me BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="in unita bas.mp3">
+                                <span class="track-title">In unita BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/In%20unita%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="la tua glora bas.mp3">
+                                <span class="track-title">La tua glora BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/La%20tua%20glora%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="noi crediamo in te bas.mp3">
+                                <span class="track-title">Noi crediamo in te BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Noi%20crediamo%20in%20te%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="per sempre re della gloria bas.mp3">
+                                <span class="track-title">Per sempre Re della gloria BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Per%20sempre%20Re%20della%20gloria%20BAS.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="ti adorero bas.mp3">
+                                <span class="track-title">Ti adorero BAS.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/34-Sentieri%20di%20speranza-Bassi/34-Sentieri%20di%20speranza-Bassi/Ti%20adorero%20BAS.mp3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 35-Mi affido a te - Bassi -->
         <div class="section" data-section-name="35-Mi affido a te - Bassi">
             <details>
                 <summary>📁 35-Mi affido a te - Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="mi affido a te bassi">
-                        <span class="track-title">Mi affido a te - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="danzerò per te - bassi.mp3">
+                                <span class="track-title">Danzerò per te - Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Danzerò per te - Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="dio è amore- bassi.mp3">
+                                <span class="track-title">Dio è Amore- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Dio è Amore- Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="e' il signore- bassi.mp3">
+                                <span class="track-title">E' il Signore- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/E'%20il%20Signore-%20Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="figli di re- bassi.mp3">
+                                <span class="track-title">Figli di Re- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Figli%20di%20Re-%20Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="la nostra lode- bassi.mp3">
+                                <span class="track-title">La nostra lode- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/La%20nostra%20lode-%20Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="mi affido a te- bassi.mp3">
+                                <span class="track-title">Mi affido a Te- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Mi%20affido%20a%20Te-%20Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="ora i miei occhi- bassi.mp3">
+                                <span class="track-title">Ora i miei occhi- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Ora%20i%20miei%20occhi-%20Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="questo è il giorno . bassi.mp3">
+                                <span class="track-title">Questo è il giorno . Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Questo è il giorno . Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="roccia di fedeltà- bassi.mp3">
+                                <span class="track-title">Roccia di fedeltà- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Roccia di fedeltà- Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="spirito santo- bassi.mp3">
+                                <span class="track-title">Spirito Santo- Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Spirito%20Santo-%20Bassi.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="via verità e vita - bassi.mp3">
+                                <span class="track-title">Via Verità e Vita - Bassi.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/35-Mi%20affido%20a%20te%20-%20Bassi/35-Mi%20affido%20a%20te%20-%20Bassi/Via Verità e Vita - Bassi.mp3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 36-Parola d'Amore-bassi -->
-        <div class="section" data-section-name="36-Parola d'Amore-bassi">
+        <div class="section" data-section-name="36-Parola d'Amore -bassi">
             <details>
-                <summary>📁 36-Parola d'Amore-bassi</summary>
+                <summary>📁 36-Parola d'Amore -bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="sulla tua parola 1">
-                        <span class="track-title">sulla tua parola 1.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore-bassi/36-Parola%20d'Amore%20-bassi/sulla%20tua%20parola%201.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="adoro te 1.mp3">
+                                <span class="track-title">adoro te 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/adoro%20te%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="alza le braccia 1.mp3">
+                                <span class="track-title">alza le braccia 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/alza%20le%20braccia%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="glorifichiamo il tuo nome 1.mp3">
+                                <span class="track-title">glorifichiamo il tuo nome 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/glorifichiamo%20il%20tuo%20nome%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="io voglio amarti 1.mp3">
+                                <span class="track-title">io voglio amarti 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/io%20voglio%20amarti%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="la forza del tuo amore 1.mp3">
+                                <span class="track-title">la forza del tuo amore 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/la%20forza%20del%20tuo%20amore%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="mi basta la tua grazia 1.mp3">
+                                <span class="track-title">mi basta la tua grazia 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/mi%20basta%20la%20tua%20grazia%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="padre per sempre 1.mp3">
+                                <span class="track-title">padre per sempre 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/padre%20per%20sempre%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="parola d'amore 1.mp3">
+                                <span class="track-title">parola d'amore 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/parola%20d'amore%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="regna sul tuo trono 1.mp3">
+                                <span class="track-title">regna sul tuo trono 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/regna%20sul%20tuo%20trono%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="siamo qui riuniti 1.mp3">
+                                <span class="track-title">siamo qui riuniti 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/siamo%20qui%20riuniti%201.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="sulla tua parola 1.mp3">
+                                <span class="track-title">sulla tua parola 1.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/36-Parola%20d'Amore%20-bassi/36-Parola%20d'Amore%20-bassi/sulla%20tua%20parola%201.mp3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 37-lo ti seguirò-Bassi -->
-        <div class="section" data-section-name="37-lo ti seguirò-Bassi">
+        <div class="section" data-section-name="37-Io ti seguirò-Bassi">
             <details>
-                <summary>📁 37-lo ti seguirò-Bassi</summary>
+                <summary>📁 37-Io ti seguirò-Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="lo ti seguirò bassi">
-                        <span class="track-title">Io ti seguirò - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-lo%20ti%20seguir%C3%B2-Bassi/37-lo%20ti%20seguir%C3%B2-Bassi.mp3"></audio>
-                    </div>
+                            <div class="track" data-title="acclamiamo al signore - basso.mp3">
+                                <span class="track-title">Acclamiamo al Signore - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Acclamiamo%20al%20Signore%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="gesu buon pastore - basso.mp3">
+                                <span class="track-title">Gesu buon pastore - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Gesu%20buon%20pastore%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="insieme cantiamo - basso.mp3">
+                                <span class="track-title">Insieme cantiamo - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Insieme%20cantiamo%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="io ti seguiro - basso.mp3">
+                                <span class="track-title">Io ti seguiro - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Io%20ti%20seguiro%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="maranatha, soffio di dio - basso.mp3">
+                                <span class="track-title">Maranatha, soffio di Dio - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Maranatha%2C%20soffio%20di%20Dio%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="rimani con noi - basso.mp3">
+                                <span class="track-title">Rimani con noi - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Rimani%20con%20noi%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="signore dei signori - basso.mp3">
+                                <span class="track-title">Signore dei Signori - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Signore%20dei%20Signori%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="sole di giustizia - basso.mp3">
+                                <span class="track-title">Sole di giustizia - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Sole%20di%20giustizia%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="tu sei santo - basso.mp3">
+                                <span class="track-title">Tu sei Santo - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Tu%20sei%20Santo%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="tu sei qui - basso.mp3">
+                                <span class="track-title">Tu sei qui - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Tu%20sei%20qui%20-%20BASSO.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="uno spirito nuovo - basso.mp3">
+                                <span class="track-title">Uno Spirito nuovo - BASSO.mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/37-Io ti seguirò-Bassi/37-Io ti seguirò-Bassi/Uno%20Spirito%20nuovo%20-%20BASSO.mp3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 38- Mi arrendo al Tuo amore - Bassi -->
         <div class="section" data-section-name="38- Mi arrendo al Tuo amore - Bassi">
             <details>
                 <summary>📁 38- Mi arrendo al Tuo amore - Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="lodate il signore_[bassi]">
-                        <span class="track-title">Lodate il Signore_[BASSI].mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Lodate%20il%20Signore_[BASSI].mp3"></audio>
-                    </div>
+                            <div class="track" data-title="con tutto il cuor_[bassi].mp3">
+                                <span class="track-title">Con Tutto il cuor_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Con%20Tutto%20il%20cuor_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="del tuo amore io vivro'_[bassi].mp3">
+                                <span class="track-title">Del Tuo Amore io vivro'_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Del%20Tuo%20Amore%20io%20vivro'_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="diamo gloria al signore_[bassi].mp3">
+                                <span class="track-title">Diamo Gloria al Signore_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Diamo%20Gloria%20al%20Signore_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="gesu' mio re_[bassi].mp3">
+                                <span class="track-title">Gesu' mio Re_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Gesu'%20mio%20Re_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="inno alla carita'_[bassi].mp3">
+                                <span class="track-title">Inno alla Carita'_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Inno%20alla%20Carita'_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="lodate il signore_[bassi].mp3">
+                                <span class="track-title">Lodate il Signore_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Lodate%20il%20Signore_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="manda il tuo spirito_[bassi].mp3">
+                                <span class="track-title">Manda il Tuo Spirito_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Manda%20il%20Tuo%20Spirito_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="mi arrendo al tuo amore_[bassi].mp3">
+                                <span class="track-title">Mi Arrendo al Tuo Amore_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Mi%20Arrendo%20al%20Tuo%20Amore_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="nella tua pace_[bassi].mp3">
+                                <span class="track-title">Nella Tua Pace_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Nella%20Tua%20Pace_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="redentore delle genti_[bassi].mp3">
+                                <span class="track-title">Redentore delle genti_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Redentore%20delle%20genti_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="serviro' il signore_[bassi].mp3">
+                                <span class="track-title">Serviro' il Signore_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Serviro'%20il%20Signore_%5BBASSI%5D.mp3"></audio>
+                            </div>
+                            <div class="track" data-title="vero cibo_[bassi].mp3">
+                                <span class="track-title">Vero Cibo_[BASSI].mp3</span>
+                                <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/38-%20Mi%20arrendo%20al%20Tuo%20amore%20-%20Bassi/Vero%20Cibo_%5BBASSI%5D.mp3"></audio>
+                            </div>
                 </div>
             </details>
         </div>
-
-        <!-- 39 lo credo - Bassi -->
-        <div class="section" data-section-name="39 lo credo - Bassi">
+        <div class="section" data-section-name="39 - Sorgente di salvezza - Bassi">
             <details>
-                <summary>📁 39 lo credo - Bassi</summary>
+                <summary>📁 39 - Io credo - Bassi</summary>
                 <div class="section-content">
-                    <div class="track" data-title="io credo bassi">
-                        <span class="track-title">Io credo - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20lo%20credo%20-%20Bassi/39%20lo%20credo%20-%20Bassi.mp3"></audio>
+                    <div class="track" data-title="01-spalanca le tue porte - bassi.mp3">
+                        <span class="track-title">01-Spalanca le tue porte - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/01-Spalanca%20le%20tue%20porte%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="02-kyrie eleison1 - bassi.mp3">
+                        <span class="track-title">02-Kyrie eleison1 - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/02-Kyrie%20eleison1%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="03-kyrie eleison2 - bassi.mp3">
+                        <span class="track-title">03-Kyrie eleison2 - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/03-Kyrie%20eleison2%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="04-gloria - bassi.mp3">
+                        <span class="track-title">04-Gloria - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/04-Gloria%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="05-salmo - bassi.mp3">
+                        <span class="track-title">05-Salmo - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/05-Salmo%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="06-alleluja  - bassi.mp3">
+                        <span class="track-title">06-Alleluja  - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/06-Alleluja%20%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="07-santi per te - bassi.mp3">
+                        <span class="track-title">07-Santi per Te - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/07-Santi%20per%20Te%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="08-santo - bassi.mp3">
+                        <span class="track-title">08-Santo - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/08-Santo%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="09-acclamazioni per la preghiera eucaristica - bassi.mp3">
+                        <span class="track-title">09-Acclamazioni per la preghiera eucaristica - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/09-Acclamazioni%20per%20la%20preghiera%20eucaristica%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="10-agnello di dio - bassi.mp3">
+                        <span class="track-title">10-Agnello di Dio - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/10-Agnello%20di%20Dio%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="11-veniamo a te - bassi.mp3">
+                        <span class="track-title">11-Veniamo a Te - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/11-Veniamo%20a%20Te%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="12-sorgente di salvezza - bassi.mp3">
+                        <span class="track-title">12-Sorgente di salvezza - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/12-Sorgente%20di%20salvezza%20-%20bassi.mp3"></audio>
+                    </div>
+                    <div class="track" data-title="13-gesù cristo è il signore - bassi.mp3">
+                        <span class="track-title">13-Gesù Cristo è il Signore - bassi.mp3</span>
+                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/39%20-%20Io%20credo%20-%20Bassi/13-Gesù Cristo è il Signore - bassi.mp3"></audio>
                     </div>
                 </div>
             </details>
         </div>
-
-        <!-- BASSI 2020 -->
-        <div class="section" data-section-name="BASSI 2020">
-            <details>
-                <summary>📁 BASSI 2020</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2020">
-                        <span class="track-title">Traccia Bassi 2020</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI%202020/bassi2020.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- BASSI 2026 -->
-        <div class="section" data-section-name="BASSI 2026">
-            <details>
-                <summary>📁 BASSI 2026</summary>
-                <div class="section-content">
-                    <div class="track" data-title="gesù tu sei il signor">
-                        <span class="track-title">Gesù tu sei il Signor.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI%202026/Ges%C3%B9%20tu%20sei%20il%20Signor.mp3"></audio>
-                    </div>
-                    <div class="track" data-title="o alto e glorioso">
-                        <span class="track-title">O alto e glorioso.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI%202026/O%20alto%20e%20glorioso.mp3"></audio>
-                    </div>
-                    <div class="track" data-title="per sempre">
-                        <span class="track-title">Per sempre.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI%202026/Per%20sempre.mp3"></audio>
-                    </div>
-                    <div class="track" data-title="portiamo il dono">
-                        <span class="track-title">Portiamo il dono.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI%202026/Portiamo%20il%20dono.mp3"></audio>
-                    </div>
-                    <div class="track" data-title="santo è il tuo nome">
-                        <span class="track-title">Santo è il tuo nome.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI%202026/Santo%20%C3%A8%20il%20tuo%20nome.mp3"></audio>
-                    </div>
-                    <div class="track" data-title="tu sei il re">
-                        <span class="track-title">Tu sei il re.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI%202026/Tu%20sei%20il%20re.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- BASSI (Generale) -->
-        <div class="section" data-section-name="BASSI">
-            <details>
-                <summary>📁 BASSI</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi generale">
-                        <span class="track-title">Traccia Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/BASSI/bassi.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2010 -->
-        <div class="section" data-section-name="Bassi 2010">
-            <details>
-                <summary>📁 Bassi 2010</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2010">
-                        <span class="track-title">Bassi 2010</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202010/Bassi%202010/bassi2010.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2011 -->
-        <div class="section" data-section-name="Bassi 2011">
-            <details>
-                <summary>📁 Bassi 2011</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2011">
-                        <span class="track-title">Bassi 2011</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202011/bassi2011.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2012 -->
-        <div class="section" data-section-name="Bassi 2012">
-            <details>
-                <summary>📁 Bassi 2012</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2012">
-                        <span class="track-title">Bassi 2012</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202012/Bassi%202012/bassi2012.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2013 -->
-        <div class="section" data-section-name="Bassi 2013">
-            <details>
-                <summary>📁 Bassi 2013</summary>
-                <div class="section-content">
-                    <div class="track" data-title="basso rns 2013">
-                        <span class="track-title">Basso RnS 2013</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202013/basso%20rns%202013/basso2013.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2014 -->
-        <div class="section" data-section-name="Bassi 2014">
-            <details>
-                <summary>📁 Bassi 2014</summary>
-                <div class="section-content">
-                    <div class="track" data-title="parti bassi 2014">
-                        <span class="track-title">Parti Bassi 2014</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202014/Parti%20Bassi/bassi2014.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2015 -->
-        <div class="section" data-section-name="Bassi 2015">
-            <details>
-                <summary>📁 Bassi 2015</summary>
-                <div class="section-content">
-                    <div class="track" data-title="06 - t'amo gesù - basso">
-                        <span class="track-title">06 - T'amo Gesù - Basso.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202015/06%20-%20T'amo%20Ges%C3%B9%20-%20Basso.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2016 -->
-        <div class="section" data-section-name="Bassi 2016">
-            <details>
-                <summary>📁 Bassi 2016</summary>
-                <div class="section-content">
-                    <div class="track" data-title="fedele è dio per sempre">
-                        <span class="track-title">Fedele è Dio per sempre.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202016/Fedele%20%C3%A8%20Dio%20per%20sempre.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2017 -->
-        <div class="section" data-section-name="Bassi 2017">
-            <details>
-                <summary>📁 Bassi 2017</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2017">
-                        <span class="track-title">Bassi 2017</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202017/bassi2017.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2018 -->
-        <div class="section" data-section-name="Bassi 2018">
-            <details>
-                <summary>📁 Bassi 2018</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi - fiumi di misericordia -">
-                        <span class="track-title">Bassi - Fiumi di misericordia -.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202018/Bassi%20-%20Fiumi%20di%20misericordia%20-.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2019 -->
-        <div class="section" data-section-name="Bassi 2019">
-            <details>
-                <summary>📁 Bassi 2019</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2019">
-                        <span class="track-title">Bassi 2019</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202019/bassi2019.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2021 -->
-        <div class="section" data-section-name="Bassi 2021">
-            <details>
-                <summary>📁 Bassi 2021</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2021">
-                        <span class="track-title">Bassi 2021</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202021/bassi2021.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2023 -->
-        <div class="section" data-section-name="Bassi 2023">
-            <details>
-                <summary>📁 Bassi 2023</summary>
-                <div class="section-content">
-                    <div class="track" data-title="05 mi hai amato per primo">
-                        <span class="track-title">05 Mi hai amato per primo.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202023/05%20Mi%20hai%20amato%20per%20primo.mp3"></audio>
-                    </div>
-                    <div class="track" data-title="08 nuova luce">
-                        <span class="track-title">08 Nuova luce.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202023/08%20Nuova%20luce.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2024 -->
-        <div class="section" data-section-name="Bassi 2024">
-            <details>
-                <summary>📁 Bassi 2024</summary>
-                <div class="section-content">
-                    <div class="track" data-title="uomo della croce - bassi">
-                        <span class="track-title">uomo della croce - bassi.mp3</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202024/uomo%20della%20croce%20-%20bassi.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Bassi 2025 -->
-        <div class="section" data-section-name="Bassi 2025">
-            <details>
-                <summary>📁 Bassi 2025</summary>
-                <div class="section-content">
-                    <div class="track" data-title="bassi 2025">
-                        <span class="track-title">Bassi 2025</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Bassi%202025/bassi2025.mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
-        <!-- Sorgente di salvezza (bassi) -->
-        <div class="section" data-section-name="Sorgente di salvezza (bassi)">
-            <details>
-                <summary>📁 Sorgente di salvezza (bassi)</summary>
-                <div class="section-content">
-                    <div class="track" data-title="sorgente di salvezza bassi">
-                        <span class="track-title">Sorgente di salvezza - Parte Bassi</span>
-                        <audio controls controlsList="nodownload" class="global-audio" src="https://raw.githubusercontent.com/samu-saba/CRrT/main/bassi/Sorgente%20di%20salvezza%20(bassi)/Sorgente%20di%20salvezza%20(bassi).mp3"></audio>
-                    </div>
-                </div>
-            </details>
-        </div>
-
     </div>
-
-    <!-- SCRIPT: RIPRODUZIONE CONTINUA GLOBALE, RICERCA E BLOCCO DOWNLOAD -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const allAudioElements = Array.from(document.querySelectorAll('.global-audio'));
             const searchInput = document.getElementById('search-input');
             const sections = document.querySelectorAll('.section');
 
-            // 1. Gestione riproduzione continua globale e protezione file
             allAudioElements.forEach((audio, index) => {
-                const src = audio.getAttribute('src');
-                if (src && src.toLowerCase().endsWith('.m4a')) {
-                    audio.type = 'audio/mp4';
-                }
-
-                audio.addEventListener('contextmenu', (e) => {
-                    e.preventDefault();
-                });
-
+                audio.addEventListener('contextmenu', e => e.preventDefault());
                 audio.addEventListener('ended', () => {
                     for (let i = index + 1; i < allAudioElements.length; i++) {
-                        const nextAudio = allAudioElements[i];
-                        if (nextAudio.closest('.track').style.display !== 'none') {
-                            nextAudio.play();
+                        if (allAudioElements[i].closest('.track').style.display !== 'none') {
+                            allAudioElements[i].play();
                             break;
                         }
                     }
                 });
-
                 audio.addEventListener('play', () => {
-                    allAudioElements.forEach(otherAudio => {
-                        if (otherAudio !== audio) {
-                            otherAudio.pause();
-                        }
-                    });
+                    allAudioElements.forEach(o => { if (o !== audio) o.pause(); });
                 });
             });
 
-            // 2. Funzionalità barra di ricerca in tempo reale
             searchInput.addEventListener('input', (e) => {
                 const term = e.target.value.toLowerCase().trim();
-
                 sections.forEach(section => {
                     const tracks = section.querySelectorAll('.track');
-                    let visibleTracksInSec = 0;
-
+                    let visible = 0;
                     tracks.forEach(track => {
                         const title = track.getAttribute('data-title') || '';
                         if (title.includes(term)) {
                             track.style.display = 'flex';
-                            visibleTracksInSec++;
+                            visible++;
                         } else {
                             track.style.display = 'none';
                         }
                     });
-
                     const details = section.querySelector('details');
-                    if (visibleTracksInSec > 0) {
+                    if (visible > 0) {
                         section.style.display = 'block';
-                        if (term !== '') {
-                            details.setAttribute('open', 'open');
-                        }
+                        if (term !== '') details.setAttribute('open', 'open');
                     } else {
                         section.style.display = 'none';
                     }
@@ -856,6 +1415,5 @@
             });
         });
     </script>
-
 </body>
 </html>
